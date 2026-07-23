@@ -7,25 +7,25 @@ body{margin:0;font-family:Segoe UI,Arial;background:#eef2f7}
 /* Entire logo row */
 .logo-row{
     display:flex;
-    align-items:center;
-    justify-content:space-between;
+    width:100%;
 }
 /* Left and right sections */
 .logo-group{
     display:flex;
     align-items:center;
-    gap:20px;
+    justify-content:center;
+    gap:25px;
     padding:12px 25px;
 }
 /* White section */
 .logo-group.light{
     background:#fff;
+    flex:1;
 }
 /* Blue section */
 
 .logo-group.dark{
     background:#0b5394;
-    border-radius:0 0 0 10px;
 }
 
 /* SAME HEIGHT FOR EVERY LOGO */
@@ -40,16 +40,16 @@ body{margin:0;font-family:Segoe UI,Arial;background:#eef2f7}
 /* Title */
 .title{
     text-align:center;
-    padding:15px 0;
+    padding:18px 0;
 }
 .title h1{
     margin:0;
-    font-size:38px;
     color:#0b5394;
+    font-size:40px;
 }
 .title h2{
-    margin-top:5px;
-    color:#666;
+    margin:5px 0 0;
+    color:#555;
     font-size:22px;
     font-weight:500;
 }
