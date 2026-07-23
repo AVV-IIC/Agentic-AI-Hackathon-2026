@@ -13,9 +13,9 @@ body{margin:0;font-family:Segoe UI,Arial;background:#eef2f7}
 .logo-group{
     display:flex;
     align-items:center;
-    justify-content:center;
-    gap:25px;
-    padding:12px 25px;
+    justify-content:space-evenly;
+    gap:30px;
+    padding:15px 25px;
 }
 /* White section */
 .logo-group.light{
@@ -40,7 +40,9 @@ body{margin:0;font-family:Segoe UI,Arial;background:#eef2f7}
 /* Title */
 .title{
     text-align:center;
-    padding:18px 0;
+    padding:25px 0;
+    background:linear-gradient(to bottom,#ffffff,#f4f9ff);
+    border-top:2px solid #d8e7f8;
 }
 .title h1{
     margin:0;
