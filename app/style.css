@@ -4,53 +4,51 @@ body{margin:0;font-family:Segoe UI,Arial;background:#eef2f7}
     box-shadow:0 2px 8px rgba(0,0,0,.15);
 }
 
-/* First row */
-
-.header-top{
+/* Entire logo row */
+.logo-row{
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
 }
-
+/* Left and right sections */
 .logo-group{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:20px;
     padding:12px 25px;
 }
-
-.left{
+/* White section */
+.logo-group.light{
     background:#fff;
 }
+/* Blue section */
 
-.right{
+.logo-group.dark{
     background:#0b5394;
+    border-radius:0 0 0 10px;
 }
 
-/* Keep the old logo size */
+/* SAME HEIGHT FOR EVERY LOGO */
+
 .logo-group img{
-    height:70px;
+    height:60px;      /* Change this to 65 or 70 if needed */
     width:auto;
-    padding:4px;
-    background:#fff;
-    border-radius:4px;
+    object-fit:contain;
+    display:block;
 }
 
-/* Second row */
-
+/* Title */
 .title{
     text-align:center;
     padding:15px 0;
 }
-
 .title h1{
     margin:0;
-    color:#0b5394;
     font-size:38px;
+    color:#0b5394;
 }
-
 .title h2{
-    margin:5px 0 0;
+    margin-top:5px;
     color:#666;
     font-size:22px;
     font-weight:500;
