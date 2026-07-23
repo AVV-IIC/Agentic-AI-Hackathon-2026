@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agentic AI Hackathon 2026 - Team Onboarding</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<div class="logo-group left">
+<img src="logos/logo1.png"><img src="logos/logo2.png"><img src="logos/logo3.png">
+</div>
+<div class="title">
+<h1>Agentic AI Hackathon 2026</h1>
+<h2>Team Onboarding Dashboard</h2>
+</div>
+<div class="logo-group right">
+<img src="logos/logo4.png"><img src="logos/logo5.png"><img src="logos/logo6.png">
+</div>
+</header>
+
+<div class="container">
+<input type="file" id="jsonFile" accept=".json">
+<div class="cards">
+<div class="card"><h3>Total Teams</h3><p id="total">0</p></div>
+<div class="card"><h3>Fully Onboarded</h3><p id="done">0</p></div>
+<div class="card"><h3>Pending</h3><p id="pending">0</p></div>
+</div>
+
+<input type="text" id="search" placeholder="Search team...">
+
+<table id="teamTable">
+<thead><tr><th>#</th><th>Team</th><th>Status</th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
