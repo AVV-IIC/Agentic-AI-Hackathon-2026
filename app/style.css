@@ -25,7 +25,7 @@ body{margin:0;font-family:Segoe UI,Arial;background:#eef2f7}
 /* Blue section */
 
 .logo-group.dark{
-    background:#0b5394;
+    background:#092442;
 }
 
 /* SAME HEIGHT FOR EVERY LOGO */
@@ -41,8 +41,8 @@ body{margin:0;font-family:Segoe UI,Arial;background:#eef2f7}
 .title{
     text-align:center;
     padding:25px 0;
-    background:linear-gradient(to bottom,#ffffff,#f4f9ff);
-    border-top:2px solid #d8e7f8;
+    background:#b3d2f5;
+    border-top:2px solid #092442;
 }
 .title h1{
     margin:0;
