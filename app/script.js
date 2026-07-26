@@ -1,11 +1,12 @@
 let all=[];
 const tbody=document.querySelector('#teamTable tbody');
-document.getElementById('jsonFile').addEventListener('change',e=>{
-const f=e.target.files[0]; if(!f)return;
-const r=new FileReader();
-r.onload=x=>{all=JSON.parse(x.target.result);render(all);};
-r.readAsText(f);
-});
+fetch('teams_status.json')
+  .then(response => response.json())
+  .then(data => {
+    all = data;
+    render(all);
+  })
+  .catch(err => console.error('Error loading JSON:', err));
 document.getElementById('search').addEventListener('input',e=>{
 const q=e.target.value.toLowerCase();
 render(all.filter(t=>t.team.toLowerCase().includes(q)));
