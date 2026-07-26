@@ -1,6 +1,6 @@
 let all=[];
 const tbody=document.querySelector('#teamTable tbody');
-fetch('teams_status.json')
+fetch('team_status.json')
   .then(response => response.json())
   .then(data => {
     all = data;
